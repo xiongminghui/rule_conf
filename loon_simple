@@ -94,7 +94,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list, policy=🚀 策略选择, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list, policy=🚀 策略选择, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Download/Download.list, policy=DIRECT, enabled=true
-https://yfamily.vercel.app/rule/ASN-CN.list, policy=DIRECT, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/auto-update/ruleset/ASN.China.list, policy=DIRECT, tag="🍟 Fries: 🌐 ASN China", enabled=true
 [Rule]
 # 本地分流规则:相同规则下本地规则优先生效
 # 绕过企业证书过期
@@ -107,18 +107,7 @@ DOMAIN, mesu.apple.com, Apple Update
 DOMAIN, xp.apple.com, Apple Update
 DOMAIN, gdmf.apple.com, Apple Update
 
-# 其它
-DOMAIN-SUFFIX,local,DIRECT
-URL-REGEX,(Subject|HELO|SMTP),DIRECT
-DOMAIN-KEYWORD,announce,DIRECT
-DOMAIN-KEYWORD,torrent,DIRECT
-DOMAIN-KEYWORD,cn,DIRECT
-DOMAIN-KEYWORD,tracker,DIRECT
-DOMAIN-KEYWORD,yattazen,Proxy
-DOMAIN-SUFFIX,smtp,DIRECT
-
 IP-CIDR,192.168.0.0/16,DIRECT
-GEOIP,CN,DIRECT
 FINAL,🚀 策略选择
 
 [Plugin]
