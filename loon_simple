@@ -94,7 +94,8 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Google/Google.list, policy=🚀 策略选择, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list, policy=🚀 策略选择, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Download/Download.list, policy=DIRECT, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaASN/ChinaASN.list, policy=DIRECT, tag="🍟 Fries: 🌐 ASN China", enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMax/ChinaMax.list, policy=DIRECT, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMax/ChinaMax_Domain.list, policy=DIRECT, enabled=true
 [Rule]
 # 本地分流规则:相同规则下本地规则优先生效
 # 绕过企业证书过期
@@ -116,3 +117,8 @@ https://ghproxy.com/https://raw.githubusercontent.com/Peng-YM/Loon-Gallery/maste
 https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.loon.plugin, tag=BoxJs, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, tag=Sub-Store, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin, tag=Spotify, enabled=true
+
+[MITM]
+hostname = rdcseason.m.jd.com, *.googlevideo.com, trade-acs.m.taobao.com, as.xiaojukeji.com, wq.jd.com, api.m.jd.com, *.google.cn
+enable = true
+skip-server-cert-verify = true
